@@ -1,5 +1,6 @@
 GEM
   remote: http://rubygems.org/
+  remote: http://gems.engineyard.com/
   specs:
     abstract (1.0.0)
     actionmailer (3.0.0)
@@ -34,6 +35,8 @@ GEM
     builder (2.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    glassfish (1.0.3.dev-java)
+      rack (>= 0.4.0)
     i18n (0.4.1)
     jdbc-sqlite3 (3.6.3.054)
     mail (2.2.6.1)
@@ -71,5 +74,6 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbc-adapter
+  glassfish (= 1.0.3.dev)
   jdbc-sqlite3
   rails (= 3.0.0)
