@@ -74,6 +74,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbc-adapter
+  bundler (= 1.0.0)
   glassfish (= 1.0.3.dev)
   jdbc-sqlite3
   rails (= 3.0.0)
