@@ -38,7 +38,7 @@ GEM
     glassfish (1.0.3.dev-java)
       rack (>= 0.4.0)
     i18n (0.4.1)
-    jdbc-sqlite3 (3.6.3.054)
+    jdbc-mysql (5.0.4)
     mail (2.2.6.1)
       activesupport (>= 2.3.6)
       mime-types
@@ -76,5 +76,5 @@ DEPENDENCIES
   activerecord-jdbc-adapter
   bundler (= 1.0.0)
   glassfish (= 1.0.3.dev)
-  jdbc-sqlite3
+  jdbc-mysql
   rails (= 3.0.0)
