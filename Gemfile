@@ -9,7 +9,7 @@ gem 'bundler', '1.0.0'
 
 if defined?(JRUBY_VERSION)
   gem 'activerecord-jdbc-adapter'
-  gem 'jdbc-sqlite3', :require => false
+  gem 'jdbc-mysql', :require => false
   gem 'glassfish', '1.0.3.dev'
 else
   gem 'sqlite3-ruby', :require => 'sqlite3'
