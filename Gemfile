@@ -7,14 +7,14 @@ gem 'bundler', '1.0.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-if defined?(JRUBY_VERSION)
-  gem 'activerecord-jdbc-adapter'
-  gem 'jdbc-mysql', :require => false
-  gem 'glassfish', '1.0.3.dev'
-  gem 'jruby-openssl'
-else
-  gem 'sqlite3-ruby', :require => 'sqlite3'
-end
+# if defined?(JRUBY_VERSION)
+  gem 'activerecord-jdbc-adapter',     :platforms => :jruby
+  gem 'jdbc-mysql', :require => false, :platforms => :jruby
+  gem 'glassfish', '1.0.3.dev',        :platforms => :jruby
+  gem 'jruby-openssl',                 :platforms => :jruby
+# else
+  gem 'sqlite3-ruby', :require => 'sqlite3', :platforms => :ruby
+# end
 
 
 # Use unicorn as the web server
