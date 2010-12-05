@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 source 'http://gems.engineyard.com'
 
-gem 'rails', '3.0.0'
-gem 'bundler', '1.0.2'
+gem 'rails', '3.0.1'
+gem 'bundler'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,7 +13,7 @@ gem 'bundler', '1.0.2'
   gem 'glassfish', '1.0.3.dev',        :platforms => :jruby
   gem 'jruby-openssl',                 :platforms => :jruby
 # else
-  gem 'sqlite3-ruby', :require => 'sqlite3', :platforms => :ruby
+  gem 'mysql2', :platforms => :ruby
 # end
 
 
