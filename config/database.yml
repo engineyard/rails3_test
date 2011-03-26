@@ -1,0 +1,15 @@
+development:
+  adapter: mysql
+  database: r3test_development
+  host: localhost
+  username: root
+  password:
+  encoding: utf8
+
+production:
+  adapter: mysql
+  database: r3test
+  host: localhost
+  username: root
+  password:
+  encoding: utf8
