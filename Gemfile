@@ -1,24 +1,24 @@
 source 'http://rubygems.org'
-source 'http://gems.engineyard.com'
 
-gem 'rails', '3.0.1'
+gem 'rails', '3.0.5'
 gem 'bundler'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# if defined?(JRUBY_VERSION)
-  gem 'activerecord-jdbc-adapter',     :platforms => :jruby
-  gem 'jdbc-mysql', :require => false, :platforms => :jruby
-  gem 'glassfish', '1.0.3.dev',        :platforms => :jruby
-  gem 'jruby-openssl',                 :platforms => :jruby
-# else
-  gem 'mysql2', :platforms => :ruby
-# end
+platforms :jruby do
+  gem 'activerecord-jdbc-adapter'
+  gem 'jdbc-mysql', :require => false
+  gem 'jruby-openssl'
+  gem 'trinidad'
+end
+platforms :ruby do
+  gem 'mysql2'
 
+  # Use unicorn as the web server
+  gem 'unicorn'
+end
 
-# Use unicorn as the web server
-# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
